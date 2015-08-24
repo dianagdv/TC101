@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stdlib.h>
+
+int x, y;
+
+using namespace std;
+
+int main ()
+{
+cout << "Enter two numbers" << endl;
+cin>> x;
+cin>> y;
+int sum= x+y;
+cout << "If you sum the numbers it will give you " << sum << endl;
+
+int rest= x-y;
+cout << "The difference of the two numbers is " << rest << endl;
+
+int multi= x*y;
+cout << "The product of the two numbers is " << multi << endl;
+
+int div= x/y;
+cout << "The integer based division of the two numbers is " << div << endl;
+
+int resi= x%y;
+cout << "The remainder of integer division of the two numbers is " << resi << endl;
+
+return 0;
+
+}
