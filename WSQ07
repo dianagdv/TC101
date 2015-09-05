@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int inf, sup, sum;
+
+int main ()
+{
+cout << "Este programa saca la suma de un intervalo de numeros" << endl;
+cout << "Ingresa el numero inferior" << endl;
+cin>> inf;
+cout << "Ingresa el numero superior" << endl;
+cin>> sup;
+
+if (inf>sup)
+{
+cout << "El orden de los numeros esta mal dado, intenta de nuevo" << endl;
+}
+else 
+{
+while (inf<=sup)
+{
+sum=sum+inf;
+inf=inf+1;
+}
+cout << "La suma de los numeros es: " << sum << endl;
+}
+return 0;
+}
