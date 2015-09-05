@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int number, guess, inte=0;
+
+int main ()
+{
+srand (time(NULL));
+number= rand ()%100+1;
+cout << "Adivina en que numero estoy pensando del 1 al 100" << endl;
+while (guess != number)
+{
+inte=inte+1;
+cin>>guess;
+if (guess>number)
+{
+cout << "Ese numero es mayor al que estoy pensando" << endl;
+}
+if (guess<number)
+{
+cout << "Ese numero es menor al que estoy pensando" << endl;
+}
+if (guess==number)
+{
+cout << "Felicidades has acertado" << endl;
+cout << "El numero de intentos que has realizado para adivinar es de: " << inte<< endl;
+}
+}
+return 0;
+}
