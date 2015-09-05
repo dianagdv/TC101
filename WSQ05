@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int f, c;
+
+int main ()
+{
+cout << "Ingrese una temperatura en grados Farenheit" << endl;
+cin >> f;
+c= 5 * (f - 32 ) / 9;
+
+if (c >= 100)
+{
+cout << "El agua hierve a esta tempreatura" << endl;
+}
+
+else 
+{
+cout << "El agua no hierve a esta tempreatura" << endl;
+}
+return 0;
+}
