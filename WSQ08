@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int sum, rest, multi, div, rem, resp, x, y;
+
+int main ()
+{
+cout << "Dame dos numeros" << endl;
+cin >> x;
+cin >> y;
+cout << "Escoge la operacion a realizar (suma 1, resta 2, multiplicacion 3, division 4)" << endl;
+cin >> resp;
+if (resp == 1)
+{
+sum = x+y;
+cout << "La suma de los numeros es igual a " << sum << endl;
+}
+else
+{
+if (resp == 2)
+{
+rest = x-y;
+cout << "La resta de los numeros es igual a " << rest << endl;
+}
+else
+{
+if (resp == 3)
+{
+multi = x*y;
+cout << "La multiplicacion de los numeros es igual a " << multi << endl;
+}
+else
+{
+if (resp == 4)
+{
+div = x/y;
+rem = x%y;
+cout << "La division de los numeros es igual a " << div << " y el residuo es igual a " << rem << endl;
+}
+}
+}
+}
+return 0;
+}
