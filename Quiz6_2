@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int i;
+
+void stars (int n)
+{
+for (i=0; i<n; i++)
+{
+cout << "*";
+}
+}
+
+int n;
+
+int main ()
+{
+cout << "Introduce el numero de estrellas a imprimir" << endl;
+cin >> n;
+stars (n);
+return 0;
+}
