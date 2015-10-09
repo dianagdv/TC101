@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+long superpower (long a, long b)
+{
+return pow (a,b);
+}
+
+int main ()
+{
+long a,b;
+cout << "Introduce el numero base" << endl;
+cin >> a;
+cout << "Introduce la potencia" << endl;
+cin >> b;
+cout << "El resultado es " << superpower (a,b) << endl;
+return 0;
+}
