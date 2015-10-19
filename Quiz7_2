@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+void Palindrome(string palindrome, int x)
+{
+  string pru;
+  while (x>0)
+{
+  char let = palindrome [x-1];
+      pru = pru + let;
+      cout << let;
+      x=x-1;
+}
+
+  if (palindrome == pru)
+{
+      cout << " es palindrome\n";
+    }
+
+  else 
+{
+      cout << " no es palindrome\n";
+    }
+}
+  int main()
+{
+      cout << "Escribe una palabra" << endl;
+      string palindrome;
+      cin >> palindrome;
+      int x=palindrome.length();
+      Palindrome(palindrome, x);
+    return 0;
+    }
