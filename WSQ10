@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+int main ()
+{
+cout << "Give me 10 numbers" << endl;
+vector <float> num (10);
+for (int i=0; i<10; i++)
+{
+cin >> num [i];
+}
+float sum=0;
+for (int x=0; x<10; x++)
+{
+sum=sum + num[x];
+}
+float prom=sum/num.size();
+float desv=0;
+for (int x=0; x<num.size(); x++)
+{
+desv= (pow((num[x]-prom), 2))+desv;
+}
+desv=sqrt(desv/num.size());
+
+cout << "La suma de los numeros es " << sum << "\nEl promedio es " << prom << "\nLa desviacion es " << desv << endl;
+return 0;
+}
