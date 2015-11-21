@@ -1,0 +1,38 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+double factorial(int x)
+{
+  double resul = 1.0;
+  for (int i = 1; i <= x; i++)
+  {
+    if (x == 0)
+    return resul;
+    else
+    resul = resul * i;
+  }
+  return resul;
+}
+
+double calculate_e(int precision)
+{
+  double  resul1 = 0.0, resul2 = 1.0;
+  for(int i= 1; i<1000 ; i++)
+    {
+      resul1 = resul2;
+      resul2 = resul1 + (1/factorial(i));
+    }
+      cout << fixed << setprecision(precision) << resul2 << endl;
+    return resul1;
+}
+
+int x = 0;
+
+int main()
+{
+  cout << "Give me a number" << endl;
+  cin>> x;
+  cout << "The number of decimal points of accuracy is " << calculate_e(x) << endl;
+  return 0; 
+}
